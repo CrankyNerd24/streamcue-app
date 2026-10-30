@@ -10,6 +10,7 @@
 <meta property="og:image" content="https://streamcueapp.com/icon.png">
 <meta property="og:url" content="https://streamcueapp.com/privacy.html">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#121216">
 <script type="module">
   import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.3';
@@ -90,7 +91,10 @@
 <div class="wrap">
   <nav>
     <a class="brand" href="./">
-      <img src="icon.png" alt="" onerror="this.remove()">
+      <picture>
+        <source srcset="icon.webp" type="image/webp">
+        <img src="icon.png" alt="" width="512" height="512" onerror="this.remove()">
+      </picture>
       StreamCue
     </a>
     <div class="links">
@@ -189,7 +193,8 @@
   <h2>Contact</h2>
   <p>
     Questions about this policy or the app can be sent to
-    <a href="mailto:crankynerdcustoms@gmail.com">crankynerdcustoms@gmail.com</a>.
+    <a href="mailto:crankynerdcustoms@gmail.com">crankynerdcustoms@gmail.com</a>,
+    or see the <a href="support.html">support page</a> for common questions.
   </p>
 </div>
 

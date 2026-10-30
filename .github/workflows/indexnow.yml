@@ -1,0 +1,29 @@
+name: Ping IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "privacy.html"
+      - "support.html"
+      - "sitemap.xml"
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: POST updated URLs to IndexNow
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "host": "streamcueapp.com",
+              "key": "e471bc5dc237e75ba97360892f525a90",
+              "keyLocation": "https://streamcueapp.com/e471bc5dc237e75ba97360892f525a90.txt",
+              "urlList": [
+                "https://streamcueapp.com/",
+                "https://streamcueapp.com/support.html",
+                "https://streamcueapp.com/privacy.html"
+              ]
+            }'

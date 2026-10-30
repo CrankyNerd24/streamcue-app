@@ -10,6 +10,7 @@
 <meta property="og:image" content="https://streamcueapp.com/icon.png">
 <meta property="og:url" content="https://streamcueapp.com/support.html">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#121216">
 <script type="module">
   import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.3';
@@ -90,7 +91,10 @@
 <div class="wrap">
   <nav>
     <a class="brand" href="./">
-      <img src="icon.png" alt="" onerror="this.remove()">
+      <picture>
+        <source srcset="icon.webp" type="image/webp">
+        <img src="icon.png" alt="" width="512" height="512" onerror="this.remove()">
+      </picture>
       StreamCue
     </a>
     <div class="links">
@@ -107,7 +111,8 @@
 <p>
   StreamCue is an app for tracking TV shows and films — what's airing,
   where it streams, and whether it's free. If something isn't working
-  right, start here.
+  right, start here. New to StreamCue? See the <a href="./">home page</a>
+  for what it does.
 </p>
 
 <h2>Common questions</h2>

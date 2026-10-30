@@ -12,6 +12,7 @@
 <meta property="og:url" content="https://streamcueapp.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://streamcueapp.com/">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="theme-color" content="#121216">
 <script type="module">
   import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.3';
@@ -157,7 +158,10 @@
 <div class="wrap">
   <nav>
     <a class="brand" href="./">
-      <img src="icon.png" alt="" onerror="this.remove()">
+      <picture>
+        <source srcset="icon.webp" type="image/webp">
+        <img src="icon.png" alt="" width="512" height="512" onerror="this.remove()">
+      </picture>
       StreamCue
     </a>
     <div class="links">
@@ -253,12 +257,16 @@
       <div class="promise"><strong>No tracking</strong><span>Your list stays on your device and your iCloud.</span></div>
       <div class="promise"><strong>No subscription</strong><span>Download before Nov 15, 2026 and Premium is free, forever. $3.99 once after that — never a monthly fee.</span></div>
     </div>
+    <p class="attrib">Read the details in our <a href="privacy.html">privacy policy</a>, or get help on the <a href="support.html">support page</a>.</p>
   </div>
 </section>
 
 <section class="final">
   <div class="wrap">
-    <img class="app-icon" src="icon.png" alt="StreamCue app icon" onerror="this.remove()">
+    <picture>
+      <source srcset="icon.webp" type="image/webp">
+      <img class="app-icon" src="icon.png" alt="StreamCue app icon" width="512" height="512" onerror="this.remove()">
+    </picture>
     <h2>Never miss the cue.</h2>
     <p>StreamCue is available for iPhone in the United States.</p>
     <div class="cta">
